@@ -1,21 +1,23 @@
 html, body {
     background-color: #ffc1c1;
-    padding: 0px;
     margin: 0px;
-}
-
-body {
-    
+    padding: 0px;
 }
 
 .hamburger-menu {
     position: absolute;
-    
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
 }
 
 .line {
     width: 100px;
-    height: 20px;
+    height: 10px;
     background-color: #ffffff;
-    margin: 10px;
+    margin: 10px 0px;
 }
