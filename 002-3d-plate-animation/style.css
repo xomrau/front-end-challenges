@@ -1,0 +1,98 @@
+body {
+    background-color: #2fda76;
+}
+
+.plates {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.plate-1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    animation-name: plate-1;
+    animation-duration: 2s;
+    /* custom timing
+    ** cubic-bezier(.18,1,.55,1) */
+    /* ease out exponential 
+    ** cubic-bezier(0.19, 1, 0.22, 1) */
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 1;
+}
+
+.plate-2 {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #a84141;
+    animation-name: plate-2;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 2;
+}
+
+.plate-3 {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fde975;
+    animation-name: plate-3;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 3;
+}
+
+@keyframes plate-1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}   
+
+@keyframes plate-2 {
+    0%, 30% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes plate-3 {
+    0%, 50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
