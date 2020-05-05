@@ -1,5 +1,7 @@
 body {
     background-color: #ffc1c1;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 .frame {
@@ -7,74 +9,99 @@ body {
     border: 1px solid black;
     width: 400px;
     height: 400px;
-    
+    position: absolute;
     margin: auto;
-
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .card {
     background-color: #ffffff;
     width: 300px;
-    height: 200px;
+    height: 220px;
     margin: auto;
 }
 
+/* header container */
 .header {
     background-color: #ffd13a;
     padding: 10px;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* parameter container */
 .parameter {
     padding: 5px;
     text-align: right;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
     color: #555555;
 }
-
 .card .parameter span {
     position: relative;
-    padding: 0 20px 0 15px;
+    padding: 0 12px 0 25px;
 }
 .card .parameter span:before {
     content: "";
     position: absolute;
     left: 5px;
     top: 6px;
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 4px;
 }
 .card .parameter .red:before {
-    background-color: red;
+    background-color: #ff8b8b;
 }
 .card .parameter .blue:before {
-    background-color: blue;
+    background-color: #8f83ff;
 }
 
-
+/* chart container */
 .chart {
     position: relative;
     margin: auto;
     width: 265px;
     height: 100px;
-    background-color: gray;  
+    background-color: rgb(247, 247, 247);  
 }
 .line1, .line2, .line3 {
-    
+    background-color: rgb(168, 168, 168);
+    position: absolute;
+    height: 1px; 
+    width: 100%;
+}
+.line1 {
+    top: 0%;
+}
+.line2 {
+    top: 50%;
+}
+.line3 {
+    top: 100%;
 }
 
-svg {
-    visibility: hidden;
-    display: none; 
+/* data container */
+.red-data, .blue-data {
+    position: absolute;
+}
+svg .red-line {
+    fill: none;
+    stroke: #ff8b8b;
+    stroke-width: 2px;  
+}
+svg .blue-line {
+    fill: none;
+    stroke: #8f83ff;
+    stroke-width: 2px;
 }
 
+/*day container*/
 .days {
     position: relative;
     margin: auto;
-    background-color: green;
     text-align: center;
+    top: 10px;
 }
 .days .day {
     display: block;
