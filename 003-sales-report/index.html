@@ -4,20 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>003 Sale Reports</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="frame">
-        <div class="header">
-            <span>weekly report</span>
-            <span>01. Feb - 07. Feb</span>
-            <span>revenue</span>
-            <span>$ 3000.00</span>
-        </div>
-        <div class="parameter">
-            
-        </div>
-        <div class="chart"></div>
-        <div class="days"></div>
+        <div class="card">
+            <div class="header">
+                <span>Weekly Report</span><span>Revenue</span><br>
+                <span>01. Feb - 07. Feb</span><span>$ 3000.00</span>
+            </div>
+            <div class="parameter">
+                <span class="red">Views</span>
+                <span class="blue">Purchases</span>
+            </div>
+            <div class="chart">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <div class="red-data">
+                    <svg></svg>
+                    <div class="points"></div>
+                </div>
+                <div class="blue-data">
+                    <svg></svg> 
+                    <div class="points"></div>
+                </div>
+            </div>
+            <div class="days">
+                <span class="day">mon</span>
+                <span class="day">tue</span>
+                <span class="day">wed</span>
+                <span class="day">thu</span>
+                <span class="day">fri</span>
+                <span class="day">sat</span>
+                <span class="day">sun</span>
+            </div>
+        </div>    
     </div>
 </body>
 </html>
