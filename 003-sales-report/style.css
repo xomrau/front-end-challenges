@@ -28,6 +28,7 @@ body {
     width: 300px;
     height: 220px;  
     box-shadow: 6px 10px 14px 0px #414141;
+    border-radius: 4px;
 }
 
 /* header container */
@@ -37,6 +38,8 @@ body {
     background-color: #ffc400;
     padding: 10px 16px;
     color: #fdfdfd;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 .title, .date, .type, .value {
     position: absolute;
