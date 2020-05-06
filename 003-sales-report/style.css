@@ -131,9 +131,6 @@ svg .blue-line {
     stroke-width: 2px;
 }
 /* points and tooltips css */
-.red-data .points, .blue-data .points {
-    position: ;
-}
 .red-point-1, .red-point-2, .red-point-3, .red-point-4, .red-point-5, .red-point-6, .red-point-7 {
     position: absolute;
     width: 6px;
