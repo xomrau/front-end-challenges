@@ -1,0 +1,15 @@
+body {
+    background-color: #ffe44a;
+}
+
+.frame {
+    background-color: #4fff58;
+    width: 400px;
+    height: 400px;
+}
+
+.profile-card {
+    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+}
