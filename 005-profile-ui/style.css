@@ -27,14 +27,25 @@ body {
 }
 
 .profile {
-    position: absolute;
-    width: 50%;
-    left: 0;
-
+    float: left;
+    width: 66%;
+    height: 100%;
+    text-align: center;
 }
 
 .stats {
-    position: absolute;
-    right: 0;
-    width: 50%;
+    float: left;
+    height: 300px;
+}
+
+.stats .box {
+    width: 102px;
+    height: calc(300px / 3);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.stats .box span{
+    display: block;
+    
 }
