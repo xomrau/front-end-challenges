@@ -1,5 +1,5 @@
 .App {
-  margin: 100px;
+  margin: 100px 0px;
   display: flex;
   flex-flow: column nowrap;
   background-color: #222222;
