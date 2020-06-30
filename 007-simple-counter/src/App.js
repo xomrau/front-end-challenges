@@ -27,10 +27,9 @@ export default class App extends React.Component {
       counter: 0
     }));
   }
-
   render(){
     return(
-      <div>
+      <div className="App">
         <div className="buttons-group">
           <button onClick={this.increment}>Increment</button>
           <button onClick={this.decrement}>Decrement</button>
