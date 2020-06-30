@@ -1,6 +1,6 @@
 # Simple Counter
 
-See demo on Codepen: https://codepen.io/xomrau/full/wvMrgMP
+See demo on Codepen: https://codepen.io/xomrau/full/dyGVQKp
 
 Status: Complete :+1:
 
