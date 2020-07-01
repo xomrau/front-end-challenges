@@ -6,8 +6,8 @@ export default class Description extends React.Component {
     }
     render() {
         return(
-            <div className="text">
-                <p>{this.props.text}</p>
+            <div className="comment">
+                <p>{this.props.comment}</p>
             </div>
         );
     }

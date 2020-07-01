@@ -10,15 +10,17 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      src: 'https://via.placeholder.com/50',
+      user: 'James Bond',
+      comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
     }
   }
   render() {
     return(
       <div>
-        <Image />
-        <User />
-        <Description />
+        <Image src={this.state.src}/>
+        <User name={this.state.user}/>
+        <Description comment={this.state.comment}/>
         <Interactives />
       </div>
     );
