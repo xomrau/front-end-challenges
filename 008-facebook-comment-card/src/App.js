@@ -15,7 +15,7 @@ export default class App extends React.Component {
         <Image />
         <User />
         <Description />
-        <LikeReply />
+        <Interactives />
       </div>
     );
   }
