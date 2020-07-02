@@ -12,7 +12,8 @@ export default class App extends React.Component {
     this.state = {
       src: 'https://via.placeholder.com/50',
       user: 'James Bond',
-      comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+      comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      timePosted: '12s'
     }
   }
   render() {
@@ -21,7 +22,7 @@ export default class App extends React.Component {
         <Image src={this.state.src}/>
         <User name={this.state.user}/>
         <Description comment={this.state.comment}/>
-        <Interactives />
+        <Interactives time={this.state.timePosted}/>
       </div>
     );
   }
