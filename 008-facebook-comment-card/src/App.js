@@ -19,10 +19,10 @@ export default class App extends React.Component {
   render() {
     return(
       <div>
-        <Image src={this.state.src}/>
-        <User name={this.state.user}/>
-        <Description comment={this.state.comment}/>
-        <Interactives time={this.state.timePosted}/>
+        <Image src={this.state.src} />
+        <User name={this.state.user} />
+        <Description comment={this.state.comment} />
+        <Interactives time={this.state.timePosted} />
       </div>
     );
   }
