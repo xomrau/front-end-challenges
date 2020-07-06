@@ -3,15 +3,15 @@ import React from 'react';
 // user's name
 const User = (props) => {
     return <div className="user-name">
-        <p>{props.name}</p>
-    </div>
+        <p>{props.nameChild}</p>
+    </div>;
 };
 
 // user's comment
 const Description = (props) => {
     return <div className="comment">
         <p>
-            {props.comment}
+            {props.commentChild}
         </p>
     </div>;
 };
@@ -20,22 +20,34 @@ const Description = (props) => {
 const Interactives = (props) => {
     return <div>
         <LikeReply />
-        <TimePosted timePosted={props.time}/>
-    </div>
+        <TimePosted timePosted={props.timeChild}/>
+    </div>;
 };
 
+// like and reply component
 const LikeReply = () => {
     return <>
         <span>Like</span>
         <span>&nbsp;·&nbsp;</span>
         <span>Reply</span>
         <span>&nbsp;·&nbsp;</span>
-    </>
+    </>;
 };
 
+// time posted component, child component of Interactives
 const TimePosted = (props) => {
     return <>
         <span>{props.timePosted}</span>
-    </>
+    </>;
 }
 
+// content component for the comment card
+const ContentMain = (props) => {
+    return <div>
+        <User nameChild={props.nameParent}/>
+        <Description commentChild={props.commentParent}/>
+        <Interactives timeChild={props.timeParent}/>
+    </div>;
+}
+
+export { User, Description, Interactives, LikeReply, TimePosted, ContentMain };
