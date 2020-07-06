@@ -1,7 +1,7 @@
 import React from 'react';
 //import logo from './logo.svg';
 import './App.css';
-import Image from './components/Image';
+import Image from './components/ImageMain';
 import User from './components/User';
 import Description from './components/Description';
 import Interactives from './components/Interactives'
@@ -19,10 +19,8 @@ export default class App extends React.Component {
   render() {
     return(
       <div>
-        <Image src={this.state.src} />
-        <User name={this.state.user} />
-        <Description comment={this.state.comment} />
-        <Interactives time={this.state.timePosted} />
+        <ImageMain src={this.state.src} />
+        <ContentMain name={this.state.user} comment={this.state.comment} time={this.state.timePosted} />
       </div>
     );
   }
