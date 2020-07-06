@@ -2,7 +2,7 @@ import React from 'react';
 
 // user's name
 const User = (props) => {
-    return <div className="user-name">
+    return <div className="userName">
         <p>{props.nameChild}</p>
     </div>;
 };
@@ -18,7 +18,7 @@ const Description = (props) => {
 
 // the like, reply, timeposted component
 const Interactives = (props) => {
-    return <div>
+    return <div class="interactives">
         <LikeReply />
         <TimePosted timePosted={props.timeChild}/>
     </div>;
@@ -43,7 +43,7 @@ const TimePosted = (props) => {
 
 // content component for the comment card
 const ContentMain = (props) => {
-    return <div>
+    return <div className="mainContent">
         <User nameChild={props.nameParent}/>
         <Description commentChild={props.commentParent}/>
         <Interactives timeChild={props.timeParent}/>
