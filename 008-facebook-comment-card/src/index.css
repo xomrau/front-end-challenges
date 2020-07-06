@@ -13,6 +13,9 @@ a {
   color: #385898;
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
