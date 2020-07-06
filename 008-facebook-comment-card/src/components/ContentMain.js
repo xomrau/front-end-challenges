@@ -18,7 +18,7 @@ const Description = (props) => {
 
 // the like, reply, timeposted component
 const Interactives = (props) => {
-    return <div class="interactives">
+    return <div className="interactives">
         <LikeReply />
         <TimePosted timePosted={props.timeChild}/>
     </div>;
