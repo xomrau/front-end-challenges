@@ -2,18 +2,18 @@ import React from 'react';
 
 // user's name
 const User = (props) => {
-    return <div className="userName">
-        <p>{props.nameChild}</p>
-    </div>;
+    return <>
+        <span className="userName"><a href="#">{props.nameChild}</a></span>
+    </>;
 };
 
 // user's comment
 const Description = (props) => {
-    return <div className="comment">
-        <p>
+    return <>
+        <span className="comment">
             {props.commentChild}
-        </p>
-    </div>;
+        </span>
+    </>;
 };
 
 // the like, reply, timeposted component
@@ -27,9 +27,9 @@ const Interactives = (props) => {
 // like and reply component
 const LikeReply = () => {
     return <>
-        <span>Like</span>
+        <span><a href="#">Like</a></span>
         <span>&nbsp;·&nbsp;</span>
-        <span>Reply</span>
+        <span><a href="#">Reply</a></span>
         <span>&nbsp;·&nbsp;</span>
     </>;
 };
@@ -37,15 +37,19 @@ const LikeReply = () => {
 // time posted component, child component of Interactives
 const TimePosted = (props) => {
     return <>
-        <span>{props.timePosted}</span>
+        <span><a href="#">{props.timePosted}</a></span>
     </>;
 }
 
 // content component for the comment card
 const ContentMain = (props) => {
     return <div className="mainContent">
-        <User nameChild={props.nameParent}/>
-        <Description commentChild={props.commentParent}/>
+        <div class="content">
+            <span>
+                <User nameChild={props.nameParent}/>
+                <Description commentChild={props.commentParent}/>
+            </span>
+        </div>
         <Interactives timeChild={props.timeParent}/>
     </div>;
 }

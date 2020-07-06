@@ -16,7 +16,7 @@ export default class App extends React.Component {
   }
   render() {
     return(
-      <div>
+      <div className="commentCard">
         <ImageMain src={this.state.src} />
         <ContentMain nameParent={this.state.user} commentParent={this.state.comment} timeParent={this.state.timePosted} />
       </div>
